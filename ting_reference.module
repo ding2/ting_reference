@@ -519,7 +519,7 @@ function _ting_reference_autocomplete($string) {
     }
     else {
       // Add wildcard to the search string.
-      $query  = _ting_search_quote($string) . '*';
+      $query = '(' . $string . '*)';
     }
 
     // Search the data well.
